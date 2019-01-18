@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT recetas (plato)*>
+
+  <!ELEMENT plato (nombre, lista_ingredientes, preparacion)>
+  <!ATTLIST plato
+			  tipo CDATA #REQUIRED
+			  tiempo_preparacion CDATA #REQUIRED
+			  personas CDATA #REQUIRED
+			  dificultad (Facil|Media|Dificil) "Media" >
+			
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT lista_ingredientes (ingrediente+)>
+<!ELEMENT ingrediente (#PCDATA)>
+
+<!ELEMENT preparacion (paso+)>
+<!ELEMENT paso (#PCDATA)>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE recetas SYSTEM "recetasDTD.dtd">
+<recetas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recetasXSD.xsd">
+	<!-- <![CDATA[
+	Si la receta tiene una dificultad <= Media, se considera que puede realizarla un usuario "novato", es decir, con poca o nula experiencia.
+	Si la receta tiene una dificultad > Media, se considera que el usuario debe tener un mínimo de experiencia en el sector culinario.
+	]]>-->
+	<plato tipo="ensaladas" tiempo_preparacion="15" personas="4" dificultad="Facil">
+		<nombre>Ensalada con queso</nombre>
+		<lista_ingredientes>
+			<ingrediente>1 escarola</ingrediente>
+			<ingrediente>2 hojas de apio</ingrediente>
+			<ingrediente>2 patatas hervidas</ingrediente>
+			<ingrediente>250 gramos de queso de cabra</ingrediente>
+			<ingrediente>20 cc de aceite de oliva</ingrediente>
+			<ingrediente>1 pizca de sal</ingrediente>
+			<ingrediente>1 pizca de pimienta</ingrediente>
+		</lista_ingredientes>
+		<preparacion>
+			<paso>Cortar las verduras, las patatas y el queso y disponerlo en una ensaladera.</paso>
+			<paso>Aliñar con el aceite, la sal y la pimienta.</paso>
+		</preparacion>
+	</plato>
+	<plato tipo="pastas" tiempo_preparacion="30" personas="4" dificultad="Media">
+		<nombre>Spaguetti a la carbonara</nombre>
+		<lista_ingredientes>
+			<ingrediente>20 gramos de aceite</ingrediente>
+			<ingrediente>1 pizca de sal</ingrediente>
+			<ingrediente>4 yemas de huevo</ingrediente>
+			<ingrediente>1 pizca de pimienta negra</ingrediente>
+			<ingrediente>150 gramos de queso pecorino</ingrediente>
+			<ingrediente>400 gramos de spaguetti</ingrediente>
+			<ingrediente>120 gramos de tocino ahumado</ingrediente>
+		</lista_ingredientes>
+		<preparacion>
+			<paso>Hervir los spaguetti en abundante agua salada.</paso>
+			<paso>En una sartén con poco aceite, freír el tocino, hasta que cambie el color ligeramente.</paso>
+			<paso>En una fuente batir las yemas de los huevos (uno por comensal), el queso, la pimienta y la sal.</paso>
+			<paso>Incorporar a la crema la pasta en pequeñas porciones y remover rápidamente y seguir añadiendo. No debe de cocer el huevo.</paso>
+			<paso>Se añade el tocino desgrasado al conjunto y se sirve al momento y caliente.</paso>
+		</preparacion>
+	</plato>
+	<plato tipo="postre" tiempo_preparacion="10" personas="6" dificultad="Media">
+		<nombre>Flan rápido</nombre>
+		<lista_ingredientes>
+			<ingrediente>12 cucharadas de azúcar</ingrediente>
+			<ingrediente>6 huevos</ingrediente>
+			<ingrediente>500 cc de leche</ingrediente>
+			<ingrediente>1 limón, la raspadura</ingrediente>
+		</lista_ingredientes>
+		<preparacion>
+			<paso>Se baten los huevos con la mitad del azúcar, la raspadura de limón y, por último, la leche.</paso>
+			<paso>Con la otra mitad del azúcar y agua se hace un caramelo en el molde flanero.</paso>
+			<paso>Se dejan enfriar teniendo cuidado de que quede todo el molde bañado.</paso>
+			<paso>Se vierte la mezcla en el molde, que se cierra herméticamente.</paso>
+			<paso>En la olla exprés se pone como tres dedos de agua, se mete el molde y se cierra la olla.</paso>
+			<paso>Cuando empieza la pesa de la olla a girar, se cuenta cinco minutos y se apaga el fuego.</paso>
+			<paso>Se saca de la olla y se deja enfríar antes de desmoldar.</paso>
+		</preparacion>
+	</plato>
+</recetas>

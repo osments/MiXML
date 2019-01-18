@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="recetas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="plato" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nombre" type="xs:string" />
+							<xs:element name="lista_ingredientes">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ingrediente" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="preparacion">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="paso" type="xs:string"  minOccurs="1" maxOccurs="unbounded" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="tipo" use="required" type="xs:string" />
+						<xs:attribute name="tiempo_preparacion" use="required" type="xs:positiveInteger" />
+						<xs:attribute name="personas" use="required" type="xs:positiveInteger" />
+						<xs:attribute name="dificultad" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="Facil" />
+									<xs:enumeration value="Media" />
+									<xs:enumeration value="Dificil" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
